@@ -297,7 +297,7 @@ extension ChatInputView {
   /// Placeholder view
   private var placeholderView: some View {
     Text(placeholder)
-      .font(.body)
+      .font(.system(size: 14, design: .monospaced))
       .foregroundColor(.gray)
       .frame(maxWidth: .infinity, alignment: .leading)
       .onTapGesture {
@@ -316,7 +316,7 @@ extension ChatInputView {
       TextEditor(text: $text)
         .scrollContentBackground(.hidden)
         .focused($isFocused)
-        .font(.body)
+        .font(.system(size: 14, design: .monospaced))
         .frame(minHeight: 20, maxHeight: 200)
         .fixedSize(horizontal: false, vertical: true)
         .padding(textAreaEdgeInsets)

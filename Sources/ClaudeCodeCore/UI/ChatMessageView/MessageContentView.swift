@@ -403,9 +403,7 @@ struct MessageContentView: View {
   }
   
   private var messageFont: SwiftUI.Font {
-    guard (message.role == .user || message.role == .assistant) else {
-      return .system(size: fontSize, weight: colorScheme == .dark ? .ultraLight : .light, design: .monospaced)
-    }
-    return SwiftUI.Font.system(.body)
+    // Merlin fork: SF Mono 14pt for all text
+    return .system(size: 14, weight: colorScheme == .dark ? .light : .regular, design: .monospaced)
   }
 }

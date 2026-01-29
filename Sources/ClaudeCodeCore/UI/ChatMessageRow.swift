@@ -22,7 +22,7 @@ struct ChatMessageRow: View {
   init(
     message: ChatMessage,
     settingsStorage: SettingsStorage,
-    fontSize: Double = 13.0)
+    fontSize: Double = 14.0)
   {
     self.message = message
     self.settingsStorage = settingsStorage

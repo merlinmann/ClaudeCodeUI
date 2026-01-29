@@ -37,7 +37,7 @@ struct ChatMessageView: View {
     message: ChatMessage,
     settingsStorage: SettingsStorage,
     terminalService: TerminalService,
-    fontSize: Double = 13.0,
+    fontSize: Double = 14.0,
     viewModel: ChatViewModel,
     showArtifact: ((Artifact) -> Void)? = nil)
   {
